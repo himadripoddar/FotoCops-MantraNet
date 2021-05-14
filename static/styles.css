@@ -1,0 +1,189 @@
+body {
+}
+h1 {
+  color: red;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-align : center;
+  height: 20px;
+
+}
+h3{
+    color: #405d27;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align : center;
+    height: 10px;
+}
+.header-desc{
+    color: #6b5b95;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Varela Round,sans-serif!important;
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+.logo{
+	margin-left: 10px;
+    margin-top: 12px;
+    height: 60px;
+}
+.nitt{
+    margin-left: 10px;
+    margin-top: 12px;
+    height: 60px;
+}
+
+.comment{
+    text-align: center;
+}
+.commenttable{
+    width:60%;
+    margin:auto auto;
+    padding:10px;
+
+
+}
+
+.fileupload{
+    width:2px;
+    padding:0px;
+}
+.pasteurl{
+    padding:0px;
+    width:100%;
+}
+
+.file{
+    height:50px;
+}
+
+.inputurl{
+    width:100%;
+    padding : 15px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.submittable{
+    width: 2px;
+
+}
+.goimg{
+    height: 40px;
+}
+
+.timer_text{
+    color: #B10DC9;
+    font-size: 100%;
+    font-family: Varela Round,sans-serif!important;
+    text-align: center;
+    padding: 5px;
+}
+
+.images_table{
+    width:85%;
+    padding:20px;
+    margin: auto auto;
+}
+
+.original_image{
+    max-width:100%;
+    height:auto;
+
+}
+.masked_image{
+    max-width:100%;
+    height:auto;
+}
+
+.indextable{
+    width:70%;
+    padding:20px;
+    margin:auto auto;
+}
+
+.original_image_cell
+{
+    height: 300px;
+    width: 300px;
+    border: 1px dashed black;
+}
+.masked_image_cell
+{
+    height: 300px;
+    width: 300px;
+    border: 1px dashed black;
+}
+.prediction_cell
+{
+    height: 300px;
+    width: 300px;
+    border: 1px dashed black;
+
+}
+
+.header {
+  padding: 0px;
+  background: #DAF7A6 ;
+  color: royal blue;
+  font-size: 18px;
+}
+.header_table{
+    width: 100%;
+}
+.createdby{
+    text-align: right;
+}
+
+.Prediction{
+    text-align:center;
+    padding: 10px;
+    height:70px;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+.single-chart {
+  width: 80%;
+  justify-content: space-around ;
+  margin: auto auto;
+}
+
+.circular-chart {
+  display: block;
+  max-width: 70%;
+  max-height: 250px;
+  margin:auto auto;
+}
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}

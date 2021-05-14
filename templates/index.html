@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <title>FotoCops</title>
+    <link rel="shortcut icon" href="./static/logo.png">
+
+</head>
+<body>
+
+<div class="header">
+    <table class="header_table">
+        <tr>
+            <td>
+                <div class="pull-left">
+                    <img class="logo" src="./static/logo.png" alt="logo">
+                    <img class="nitt" src="./static/nitt.png" alt="nittrichy">
+                </div>
+            </td>
+            <td class="createdby"><h5>Created by: <a href="https://github.com/HimadriPoddar">Himadri Poddar</a>  ||  <a href="url">Prakhar Omar</a> ||  <a href="url">Adarsh Shivam</a>  </h5></td>
+        </tr>
+    </table>
+
+</div>
+
+
+<h1>The ultimate forensic solution to your photo</h1>
+<h3>Based on Self Supervised Learning </h3>
+<div class="header-desc">
+    This website is created as part of the final year project of NIT Trichy
+</div>
+
+<table class="commenttable">
+    <tr>
+         <th class="fileupload" ><form action = "http://localhost:5000/upload_file" enctype="multipart/form-data" method="post">
+           <table>
+               <tr>
+                   <td><input type="file" id="actual-btn" name="file" hidden/>
+                        <label for="actual-btn"><img class="file" src="./static/file.png" alt="Choose File"></label>
+                   </td>
+                   <td>
+                       <input type="submit" id="submit_" >
+                   </td>
+               </tr>
+           </table>
+
+            </form>
+
+        </th>
+        <th class="pasteurl"><form action = "http://localhost:5000/upload_url" method="post">
+            <input type="url" placeholder="Paste image link here ..." class="inputurl" name="search" value>
+            </form>
+        </th>
+
+
+
+        <th class="submittable"><form action="http://localhost:5000/upload" method="post">
+            <input type="submit" id="submitbutton" hidden/>
+            <label for="submitbutton"><img class="goimg" src="./static/go.png"></label>
+            </form>
+        </th>
+    </tr>
+</table>
+
+<table class="indextable">
+    <tr>
+    <th class="original_image_cell">
+        Original image
+    </th>
+    <th class="masked_image_cell">
+        Detected Forged region
+    </th>
+    <th class="prediction_cell">
+        <table width="100%" >
+            <tr><td class="Prediction"><text>Forged Area</text></td></tr>
+            <tr><td class="Prediction_bar">
+                <div class="flex-wrapper">
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange">
+                            <path class="circle-bg"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle"
+                                stroke-dasharray="100, 100"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage">%</text>
+                        </svg>
+                    </div>
+                </div>
+            </td>
+            </tr>
+<!--            <tr><th><img class="circle" src="./static/circle.jpg" alt="prediction"></th></tr>-->
+        </table>
+    </th>
+    </tr>
+
+</table>
+
+</body>
+</html>
